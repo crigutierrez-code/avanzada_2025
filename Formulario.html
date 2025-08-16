@@ -5,7 +5,90 @@
     <title>Formulario</title>
 </head>
 <body>
-    <h1>Hola Mundo</h1>
+    <h1>Formulario</h1>
     <a href="index.html">Regresar</a>
+    <form action="#" > 
+        <label for="nombre">Ingrese su Nombre: </label>
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre Completo" 
+        maxlength="25" minlength="1" required>
+        <br>
+        <label for="apellido">Ingrese su Apellido: </label>
+        <input type="text" name="apellido" id="apellido" placeholder="Apellido Completo" value="Gutierrez?" required>
+        <!--disabled: desabilita el cuadro de texto, readonly: no deja editarlo-->
+        <br>
+        <label for="edad">Ingrese su Edad: </label>
+        <input type="number" name="edad" id="edad" placeholder="Edad" min="1" max="150" required>
+        <br>
+        <fieldset>
+            <legend>Informacion de Contacto</legend>
+            <label for="correo">correo</label>
+            <input type="email" name="correo" id="correo" placeholder="Correo Electronico" required>
+            <br>
+            <label for="telefono">Telefono</label>
+            <input type="tel" name="telefono" id="telefono" placeholder="Telefono" required>
+        </fieldset>
+        <br>
+        <label for="fecha">Fecha: </label>
+        <input type="date" name="fecha" id="fecha" required> <br>
+        <input type="datetime" name="tiempo" id="tiempo" required> <br>
+        <input type="datetime-local" name="tiempolocal" id="tiempolocal" required> <br>
+        <input type="time" name="hora" id="hora" required> <br>
+        <input type="week" name="semana" id="semana" required> <br>
+        <input type="month" name="mes" id="mes" required>
+        <br>
+        <p>Buscador de Archivos</p>
+        <label for="archivo">Archivos: </label>
+        <input type="file" name="archivo" id="archivo" multiple required>
+        <br>
+        <p>Selector de Colores</p>
+        <label for="color">Selecciona tu color favorito: </label>
+        <input type="color" name="color" id="color" required>
+
+        <br>
+        <label>Eres mayor de edad: </label>
+        <label><input type="radio" name="mayor" value="si" required>
+            Si</label>
+       
+        <label><input type="radio" name="mayor" value="no" required>
+            No</label>    
+        
+        <label> <input type="radio" name="mayor" value="no_digo" required>
+            Prefiero no decirlo</label>
+        <br>
+
+        <label>Trabajas en: </label>
+        <label><input type="checkbox" name="Deporte" value="Deporte">
+            Deporte</label>
+        
+        <label><input type="checkbox" name="Tecnologia" value="Tecnologia">
+            Tecnologia</label>
+        
+        <label><input type="checkbox" name="Salud" value="Salud">
+            Salud</label>
+
+        <label><input type="checkbox" name="Otro" value="Otro">
+            Otro</label>
+        <br>
+
+        <label>Ciudad</label>
+        <select name="ciudad" required>
+            <option value="">Seleccione una ciudad</option>
+            <option value="Tunja">Tunja</option>
+            <option value="Bogota">Bogota</option>
+            <option value="Medellin">Medellin</option>
+            <option value="Cali">Cali</option>
+            <option value="Barranquilla">Barranquilla</option>
+        <br>
+
+        <label>Observaciones</label>
+        <textarea name="Observaciones">Prueba...</textarea>
+        <br>
+    
+
+        <input type="submit" value="Enviar"><br>
+        <input type="reset" value="Borrar"><br>
+        <input type="button" value="No hace nada">
+
+    </form>
 </body>
 </html>
