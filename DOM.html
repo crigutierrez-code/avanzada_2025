@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/DOM.css">
+
+    <!--<script src="js/DOM.js"></script>-->
+</head>
+
+<body>
+    <h1 id="titulo-principal">Hola mundo</h1>
+
+    <button onclick="alert(2+2)">Sumar</button>
+    <button onclick=sumar(5,2)>Sumar 1</button>
+    <button id="sumar-btn">sumar 3</button>
+
+    <form name="sumarform">
+        <input type="number" name="num-1">
+        <strong> + </strong>
+        <input type="number" name="num-2">
+        <button type="submit">calcular</button>
+    </form>
+
+    <div id="historial">
+        <div>2 + 3 = <strong>5</strong></div>
+    </div>
+
+    <div id="error-msg" class="modal">
+        <p>
+            Debe ingresar números mayores a cero
+        </p>
+    </div>
+
+    <script src="js/DOM.js"></script>
+</body>
+
+</html>
