@@ -52,3 +52,4 @@ for(i=0;i<=numeros.length;i++){
 for(let i in numeros){
     console.log(numeros[i]);
 }
+
