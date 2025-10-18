@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Almacenamiento</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+  <h1>Ejemplo de almacenamiento en Front</h1>
+
+  <form name="multiplicaForm">
+    <fieldset>
+      <legend>Multiplicar:</legend>
+      <input type="number" name="factor1" required>
+      <b>x</b>
+      <input type="number" name="factor2" required>
+      <button type="submit">Calcular</button>
+    </fieldset>
+  </form>
+
+  <h2 id="resultado"></h2>
+
+  <button onclick="mostrarTabla()">Ver Logs</button>
+
+  <!-- Modal para mostrar logs -->
+  <div id="modalLogs" class="modal">
+    <div class="modal-content">
+      <span id="cerrarModal" class="cerrar">&times;</span>
+      <h2>Logs de Operaciones</h2>
+      <table id="tablita">
+        <thead>
+          <tr>
+            <th>Fecha</th>
+            <th>Operación</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="js/local.js"></script>
+</body>
+
+</html>
